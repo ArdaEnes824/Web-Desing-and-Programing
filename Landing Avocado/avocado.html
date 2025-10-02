@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="avocado.css">
+  <style>
+    .ekran { display: none; }
+    .aktif { display: block; }
+    .ekran2 {
+      text-align: center;
+      padding: 50px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. ekran (senin orijinal tasarım) -->
+  <div class="glass-efect aktif ekran" id="ekran1">
+    <div class="main-content">
+      <nav>
+        <a href="#" class="logo"> 
+          <img src="avo-logo.png" alt="">
+        </a>
+
+        <ul>
+          <li><a href="#">Ana sayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Hizmetler</a></li>
+        </ul>
+        <div>
+          <a href="#" class="btn">İletişime geç</a>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h1 class="anim"><span>Yeşilin</span> <br>Tadını keşfet</h1>
+        <p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde recusandae delectus molestias eum, debitis itaque blanditiis inventore doloremque ab!</p>
+        <a href="#" class="btn anim" id="katilBtn">Bize katıl</a>
+      </div>
+
+      <img src="avocado.png" alt="" class="hero-img anim">
+    </div>
+  </div>
+
+  <!-- 2. ekran -->
+  <div class="ekran ekran2" id="ekran2">
+    <h1>Hoş geldin! 🎉</h1>
+    <p>Artık ikinci ekrandasın.</p>
+    <button id="geriBtn">Geri dön</button>
+  </div>
+
+  <script>
+    const ekran1 = document.getElementById("ekran1");
+    const ekran2 = document.getElementById("ekran2");
+    const katilBtn = document.getElementById("katilBtn");
+    const geriBtn = document.getElementById("geriBtn");
+
+    katilBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      ekran1.classList.remove("aktif");
+      ekran2.classList.add("aktif");
+    });
+
+    geriBtn.addEventListener("click", function() {
+      ekran2.classList.remove("aktif");
+      ekran1.classList.add("aktif");
+    });
+  </script>
+
+</body>
+</html>
