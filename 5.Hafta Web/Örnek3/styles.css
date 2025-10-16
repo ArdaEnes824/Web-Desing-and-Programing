@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* Global Ayarlar */
+#navbar {
+    list-style: none;
+}
+
+/* Kapsayıcı Ayarlar */
+#navbar #holder {
+    height: 64px;
+    border-bottom: 1px solid #000;
+}
+
+/* UL Etiketi Ayarları (Tüm Menü) */
+#navbar #holder ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Li Etiketi Ayarları (Her Bir Menü Öğesi) */
+#navbar #holder ul li {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #000;
+    border: 1px solid #000;
+    border-bottom: none;
+    float: left;
+    margin-right: 5px;
+    background: #69f; /* Bu kural aşağıdaki a:hover kuralıyla çakışabilir, deneme yapılması gerek. */
+}
+
+/* A Etiketi Ayarları (Bağlantı Metni) */
+#navbar #holder ul li a {
+    text-decoration: none;
+    display: block;
+    width: 75px;
+    padding: 20px;
+    text-align: center;
+    background: #69f;
+    color: #fff;
+    /* border-bottom: none; kuralı yukarıda li içinde tanımlı */
+}
+
+
+/* Hover Stilleri */
+#navbar #holder ul li:hover {
+    background: #FF0;
+    color: #FF0; /* Bu kuralın bir anlamı yok gibi, aşağıdaki a:hover kuralı bunu ezer */
+    text-shadow: 1px 1px 0px #000;
+}
