@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyun Dünyası</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>🎮 Oyun Türleri</h2>
+    <ul class="menu">
+      <li>Aksiyon
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank">GTA VI</a></li>
+          <li><a href="https://www.youtube.com/watch?v=8X2kIfS6fb8" target="_blank">Cyberpunk 2077</a></li>
+          <li><a href="https://www.youtube.com/watch?v=_UuktemkCFI" target="_blank">DOOM Eternal</a></li>
+        </ul>
+      </li>
+      <li>RPG
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=E3Huy2cdih0" target="_blank">Elden Ring</a></li>
+          <li><a href="https://www.youtube.com/watch?v=c0i88t0Kacs" target="_blank">Witcher 3</a></li>
+          <li><a href="https://www.youtube.com/watch?v=OkFdqqyI8y4" target="_blank">Skyrim</a></li>
+        </ul>
+      </li>
+      <li>Macera
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=XYtyeqVQnRI" target="_blank">SOT:Tomb Raider</a></li>
+          <li><a href="https://www.youtube.com/watch?v=zw47_q9wbBE" target="_blank">Zelda BOTW</a></li>
+          <li><a href="https://www.youtube.com/watch?v=rKjUAWlbTJk" target="_blank">Assassin’s Creed Valhalla</a></li>
+        </ul>
+      </li>
+      <li>Spor
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=pBM2xyco_Kg" target="_blank">EA FC 25</a></li>
+          <li><a href="https://www.youtube.com/watch?v=zwQ9RjfvJN0" target="_blank">NBA 2K25</a></li>
+          <li><a href="https://www.youtube.com/watch?v=SgSX3gOrj60" target="_blank">Rocket League</a></li>
+        </ul>
+      </li>
+      <li>Korku
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=j5Ic2z3_xp0" target="_blank">Resident Evil 4 Remake</a></li>
+          <li><a href="https://www.youtube.com/watch?v=MKrUZ36IVAY" target="_blank">Outlast 2</a></li>
+          <li><a href="https://www.youtube.com/watch?v=adFNARIHlOs" target="_blank">Phasmophobia</a></li>
+        </ul>
+      </li>
+      <li>Strateji
+        <ul class="submenu">
+          <li><a href="https://www.youtube.com/watch?v=5KdE0p2joJw" target="_blank">Civilization VI</a></li>
+          <li><a href="https://www.youtube.com/watch?v=5TnynE3PuDE" target="_blank">Age of Empires IV</a></li>
+          <li><a href="https://www.youtube.com/watch?v=MVbeoSPqRs4" target="_blank">StarCraft II</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="top-area">
+      <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="Ana Görsel" />
+      <div class="thumbs">
+        <img src="images/eldenring.jpeg" alt="Elden Ring" data-image="images/eldenring.jpeg">
+        <img src="images/gta5.jpeg" alt="GTA V" data-image="images/gta5.jpeg">
+        <img src="images/cyberpunk.jpg" alt="Cyberpunk 2077" data-image="images/cyberpunk.jpg">
+        <img src="images/doometernal.jpeg" alt="DOOM Eternal" data-image="images/doometernal.jpeg">
+    </div>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="new">Yeni Çıkanlar</button>
+      <button class="tab-button" data-tab="popular">Popüler Oyunlar</button>
+      <button class="tab-button" data-tab="upcoming">Yakında Çıkacaklar</button>
+      <button class="tab-button" data-tab="indie">Indie Oyunlar</button>
+      <button class="tab-button" data-tab="best">Tüm Zamanların Favorileri</button>
+    </div>
+
+    <div id="tabContent" class="tab-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
